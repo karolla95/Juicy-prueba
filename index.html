@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juicy Inc.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Simplicity:wght@400;700&family=Freak+Drake&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#agendar-cita">Agendar Cita</a></li>
+                <li><a href="#servicios-adicionales">Servicios Adicionales</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="quienes-somos">
+        <h1>Quiénes Somos</h1>
+        <p>Juicy Inc. es una productora audiovisual y sello discográfico que fusiona géneros musicales para crear sonidos únicos. Ofrecemos herramientas completas para la creación de contenido audiovisual de alta calidad. Nuestra propuesta se centra en originalidad, autenticidad y creatividad, explorando ritmos innovadores con dembow, afrobeat y EDM, así mismo tecnologías innovadoras para la creación de videos. Garantizamos entregas organizadas y puntuales, con tarifas y paquetes adaptados a las necesidades de cada creador.</p>
+    </section>
+
+    <section id="agendar-cita">
+        <h1>Agendar Cita</h1>
+        <form action="procesar_cita.php" method="post">
+            <h2>Registro</h2>
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">Número de Celular:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <h2>Paquetes</h2>
+            <label for="paquete">Selecciona un Paquete:</label>
+            <select id="paquete" name="paquete" required>
+                <optgroup label="Producción Audiovisual">
+                    <option value="tarifa_hora">TARIFA POR HORA: $70.000</option>
+                    <option value="paquete_1">PAQUETE 1: 2h grabación + equipos + camarógrafo + edición + stylist = $450.000</option>
+                    <option value="paquete_2">PAQUETE 2: 3h grabación + equipos + camarógrafo + edición + stylist = $550.000</option>
+                    <option value="paquete_3">PAQUETE 3: Dirección artística + 4h grabación + equipos + camarógrafo + edición + stylist = $750.000</option>
+                </optgroup>
+                <optgroup label="Producción Musical">
+                    <option value="paquete_1_musical">PAQUETE 1: Beat + composición de letra + grabación de 1 hora = $200.000</option>
+                    <option value="paquete_2_musical">PAQUETE 2: Sesión de grabación de 1 hora + mezcla + master = $180.000</option>
+                    <option value="paquete_3_musical">PAQUETE 3: Beat + composición de letra + grabación de 3 horas + mezcla + master = $380.000</option>
+                    <option value="paquete_4_musical">PAQUETE 4: Beat + composición de letra + grabación de 1 1/2 horas + mezcla + master = $360.000</option>
+                    <option value="super_paquete">SUPER PAQUETE: PAQUETE 4 + PAQUETE 3 = $1.000.000</option>
+                </optgroup>
+            </select>
+
+            <h2>Selecciona Fecha y Hora</h2>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" min="2024-09-15" required>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" min="09:00" max="18:00" required>
+
+            <h2>Información de Pago</h2>
+            <label for="pago">Método de Pago:</label>
+            <select id="pago" name="pago" required>
+                <option value="efectivo">Pagar en Efectivo</option>
+                <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                <option value="pse">PSE</option>
+            </select>
+
+            <button type="submit">Agendar Cita</button>
+        </form>
+    </section>
+
+    <section id="servicios-adicionales">
+        <h1>Servicios Adicionales</h1>
+        <ul>
+            <li>Camarógrafo: $70.000 por hora</li>
+            <li>Edición de Video: $100.000</li>
+            <li>Dirección Artística y Creativa: $70.000 por hora</li>
+            <li>Stylist: $70.000 por hora</li>
+            <li>Modelos: $70.000 por hora</li>
+            <li>Bailarines: $70.000 por hora</li>
+            <li>Composición de Canción: $70.000 por hora</li>
+            <li>Beats: $70.000 por hora</li>
+            <li>Sesión de Estudio de Grabación: $70.000 por hora</li>
+            <li>Mezcla: $70.000</li>
+            <li>Masterización: $70.000</li>
+            <li>Membresía Anual: $5.000.000 (Un video mensual de PAQUETE 1)</li>
+        </ul>
+    </section>
+
+    <section id="portafolio">
+        <h1>Portafolio</h1>
+        <p>Visita nuestras redes sociales para ver nuestro trabajo: <a href="https://www.instagram.com/juicy_inc.co/" target="_blank">Instagram de Juicy Inc.</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Juicy Inc. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
